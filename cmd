@@ -5,3 +5,4 @@ pip install webdriver-manager
 
 run test
 behave -f html -o behave-report.html  --tags=jules
+behave -f html -o behave-report.html  --tags=signup

@@ -109,17 +109,17 @@ function Collapsible_expandAllFailed()
   </head>
   <body>
     <div class="behave">
-      <div id="behave-header">
+      <div id="behave-header" class="failed">
         <div id="label">
           <h1>Behave Test Report</h1>
         </div>
         <div id="summary">
           <p id="totals">
-            <p id="feature_totals">Features: passed: 1</p>
-            <p id="scenario_totals">Scenarios: passed: 2</p>
-            <p id="step_totals">Steps: passed: 3, untested: 3</p>
+            <p id="feature_totals">Features: skipped: 1, failed: 1</p>
+            <p id="scenario_totals">Scenarios: skipped: 3, failed: 1</p>
+            <p id="step_totals">Steps: skipped: 6, untested: 3, passed: 4, failed: 1</p>
           </p>
-          <p id="duration">Finished in 9.4 seconds</p>
+          <p id="duration">Finished in 13.9 seconds</p>
           <div id="expand-collapse">
             <a id="expander" href="#" onclick="Collapsible_expandAll('scenario_steps')">Expand All</a>
             <span> | </span>
@@ -148,56 +148,7 @@ function Collapsible_expandAllFailed()
         <h3 onclick="Collapsible_toggle('scenario_0')">
           <span class="val">Scenario: Wrong email validation message</span>
         </h3>
-        <ol class="scenario_steps" id="scenario_0">
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Given </span>
-              <span class="step val">signin: I am a user on Jules signin page</span>
-              <small class="step_duration">(3.025s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_in_steps.py:4</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">signin: I click on forgot_password_link</span>
-              <small class="step_duration">(0.321s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_in_steps.py:24</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">
-                <span>forgot_password: I set my email &quot;</span>
-                <b>abc</b>
-                <span>&quot;</span>
-              </span>
-              <small class="step_duration">(1.131s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/forgot_password_steps.py:4</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Then </span>
-              <span class="step val">forgot_password: I verify that the email validation message is correct</span>
-              <small class="step_duration">(0.020s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/forgot_password_steps.py:9</span>
-            </div>
-            <span class="embed"/>
-          </li>
-        </ol>
+        <ol class="scenario_steps" id="scenario_0"/>
         <span/>
       </div>
       <div class="scenario">
@@ -206,56 +157,7 @@ function Collapsible_expandAllFailed()
         <h3 onclick="Collapsible_toggle('scenario_1')">
           <span class="val">Scenario Outline: Wrong email validation message -- @1.1 </span>
         </h3>
-        <ol class="scenario_steps" id="scenario_1">
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Given </span>
-              <span class="step val">signin: I am a user on Jules signin page</span>
-              <small class="step_duration">(0.409s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_in_steps.py:4</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">signin: I click on forgot_password_link</span>
-              <small class="step_duration">(0.715s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_in_steps.py:24</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">
-                <span>forgot_password: I set my email &quot;</span>
-                <b>abcde@.com</b>
-                <span>&quot;</span>
-              </span>
-              <small class="step_duration">(1.153s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/forgot_password_steps.py:4</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Then </span>
-              <span class="step val">forgot_password: I verify that the email validation message is correct</span>
-              <small class="step_duration">(0.023s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/forgot_password_steps.py:9</span>
-            </div>
-            <span class="embed"/>
-          </li>
-        </ol>
+        <ol class="scenario_steps" id="scenario_1"/>
         <span/>
       </div>
       <div class="scenario">
@@ -264,12 +166,43 @@ function Collapsible_expandAllFailed()
         <h3 onclick="Collapsible_toggle('scenario_2')">
           <span class="val">Scenario Outline: Wrong email validation message -- @1.2 </span>
         </h3>
-        <ol class="scenario_steps" id="scenario_2">
+        <ol class="scenario_steps" id="scenario_2"/>
+        <span/>
+      </div>
+      <div class="feature">
+        <h2>
+          <span class="val">Feature: Jules sign_up tests</span>
+        </h2>
+        <span/>
+      </div>
+      <div class="background">
+        <h3>
+          <span class="val">Background: </span>
+        </h3>
+        <ol/>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/sign-up.feature:7</span>
+        <span class="tag">@signup1</span>
+        <h3 onclick="Collapsible_toggle('scenario_3')">
+          <span class="val">Scenario: Functionality of Log in link</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_3"/>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/sign-up.feature:13</span>
+        <span class="tag">@signup</span>
+        <h3 onclick="Collapsible_toggle('scenario_4')" class="failed">
+          <span class="val">Scenario: Wrong email verification with 'personal' radio button</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_4">
           <li class="step passed">
             <div class="step_name">
               <span class="keyword">Given </span>
               <span class="step val">signin: I am a user on Jules signin page</span>
-              <small class="step_duration">(0.887s)</small>
+              <small class="step_duration">(2.655s)</small>
             </div>
             <div class="step_file">
               <span>steps/sign_in_steps.py:4</span>
@@ -279,11 +212,33 @@ function Collapsible_expandAllFailed()
           <li class="step passed">
             <div class="step_name">
               <span class="keyword">When </span>
-              <span class="step val">signin: I click on forgot_password_link</span>
-              <small class="step_duration">(0.208s)</small>
+              <span class="step val">signin: I click on sign_up link</span>
+              <small class="step_duration">(0.513s)</small>
             </div>
             <div class="step_file">
-              <span>steps/sign_in_steps.py:24</span>
+              <span>steps/sign_in_steps.py:29</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">signup: I click on personal button</span>
+              <small class="step_duration">(0.213s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/sign_up_steps.py:14</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">signup: I click on continue button</span>
+              <small class="step_duration">(0.073s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/sign_up_steps.py:19</span>
             </div>
             <span class="embed"/>
           </li>
@@ -291,27 +246,73 @@ function Collapsible_expandAllFailed()
             <div class="step_name">
               <span class="keyword">When </span>
               <span class="step val">
-                <span>forgot_password: I set my email &quot;</span>
-                <b>12345@.com</b>
+                <span>signup: I enter my first name &quot;</span>
+                <b>George</b>
                 <span>&quot;</span>
               </span>
-              <small class="step_duration">(1.500s)</small>
+              <small class="step_duration">(0.414s)</small>
             </div>
             <div class="step_file">
-              <span>steps/forgot_password_steps.py:4</span>
+              <span>steps/sign_up_steps.py:34</span>
             </div>
             <span class="embed"/>
           </li>
-          <li class="step passed">
+          <li class="step failed">
             <div class="step_name">
               <span class="keyword">Then </span>
-              <span class="step val">forgot_password: I verify that the email validation message is correct</span>
-              <small class="step_duration">(0.024s)</small>
+              <span class="step val">signup: I verify the error for empty input</span>
+              <small class="step_duration">(10.022s)</small>
             </div>
             <div class="step_file">
-              <span>steps/forgot_password_steps.py:9</span>
+              <span>steps/sign_up_steps.py:54</span>
             </div>
-            <span class="embed"/>
+            <span class="embed">
+              <a onclick="Collapsible_toggle('embed_1')">Error Message</a>
+              <pre id="embed_1" style="display: none">Traceback (most recent call last):
+  File &quot;c:\users\maria\pycharmprojects\bdd_behave\venv\lib\site-packages\behave\model.py&quot;, line 1329, in run
+    match.run(runner.context)
+  File &quot;c:\users\maria\pycharmprojects\bdd_behave\venv\lib\site-packages\behave\matchers.py&quot;, line 98, in run
+    self.func(context, *args, **kwargs)
+  File &quot;steps\sign_up_steps.py&quot;, line 56, in set_impl
+    context.sign_up_page.verify_empty_input_error()
+  File &quot;C:\Users\Maria\PycharmProjects\BDD_behave\pages\sign_up_page.py&quot;, line 63, in verify_empty_input_error
+    error_msg = self.driver.find_element(*self.EMPTY_INPUT_ERROR).text
+  File &quot;c:\users\maria\pycharmprojects\bdd_behave\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py&quot;, line 1251, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File &quot;c:\users\maria\pycharmprojects\bdd_behave\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py&quot;, line 430, in execute
+    self.error_handler.check_response(response)
+  File &quot;c:\users\maria\pycharmprojects\bdd_behave\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py&quot;, line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(),&quot;invalid&quot;)]&quot;}
+  (Session info: chrome=102.0.5005.63)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00F5D953+2414931]
+	Ordinal0 [0x00EEF5E1+1963489]
+	Ordinal0 [0x00DDC6B8+837304]
+	Ordinal0 [0x00E09500+1021184]
+	Ordinal0 [0x00E0979B+1021851]
+	Ordinal0 [0x00E36502+1205506]
+	Ordinal0 [0x00E244E4+1131748]
+	Ordinal0 [0x00E34812+1198098]
+	Ordinal0 [0x00E242B6+1131190]
+	Ordinal0 [0x00DFE860+976992]
+	Ordinal0 [0x00DFF756+980822]
+	GetHandleVerifier [0x011CCC62+2510274]
+	GetHandleVerifier [0x011BF760+2455744]
+	GetHandleVerifier [0x00FEEABA+551962]
+	GetHandleVerifier [0x00FED916+547446]
+	Ordinal0 [0x00EF5F3B+1990459]
+	Ordinal0 [0x00EFA898+2009240]
+	Ordinal0 [0x00EFA985+2009477]
+	Ordinal0 [0x00F03AD1+2046673]
+	BaseThreadInitThunk [0x7753FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77697A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77697A4E+238]
+
+</pre>
+                  
+            </span>
           </li>
         </ol>
         <span/>

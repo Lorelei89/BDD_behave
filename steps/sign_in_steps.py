@@ -24,3 +24,13 @@ def set_impl(context):
 @when('signin: I click on forgot_password_link')
 def set_impl(context):
     context.sign_in_page.click_forgot_pass_link()
+
+
+@when('signin: I click on sign_up link')
+def set_impl(context):
+    context.sign_in_page.click_on_sign_up_link()
+
+
+@then('signin: I verify if word account exists on page')
+def set_impl(context):
+    context.sign_in_page.verify_correct_text_in_page()

@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+
 from pages.base_page import BasePage
 
 
@@ -7,6 +8,8 @@ class SigninPage(BasePage):
     PASS_INPUT = (By.XPATH, '//*[@placeholder="Enter your password"]')
     LOGIN_BTN = (By.XPATH, '//*[@class="css-17qmje5"]//parent::button')
     FORGOT_PASS_LINK = (By.XPATH, '//*[@data-test-id="forgot-password-link"]')
+    SIGN_UP_LINK = (By.XPATH, '//a[@class="jss17 jss19"]')
+    ACCOUNT_TXT = (By.XPATH, '//span[contains(text(),"account")]')
 
     def navigate_to_sign_in_page(self):
         self.driver.get('https://jules.app/sign-in')
@@ -27,3 +30,11 @@ class SigninPage(BasePage):
 
     def click_forgot_pass_link(self):
         self.driver.find_element(*self.FORGOT_PASS_LINK).click()
+
+    def click_on_sign_up_link(self):
+        self.driver.find_element(*self.SIGN_UP_LINK).click()
+
+    def verify_correct_text_in_page(self):
+        account_txt = self.driver.find_element(*self.ACCOUNT_TXT)
+        self.assertIn(account_txt.text, f"Don't have an account?", 'Incorrect displayed text')
+
