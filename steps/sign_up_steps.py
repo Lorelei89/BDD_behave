@@ -54,3 +54,8 @@ def set_impl(context):
 @then('signup: I verify the error for empty input')
 def set_impl(context):
     context.sign_up_page.verify_empty_input_error()
+
+
+@then('signup: I verify first_name input name to match to ""')
+def set_impl(context):
+    context.sign_up_page.verify_correct_first_name()

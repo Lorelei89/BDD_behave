@@ -3,13 +3,13 @@ Feature: Jules forgot_password tests
   Background:
     Given signin: I am a user on Jules signin page
 
-  @jules
+  @forgot_password
   Scenario: Wrong email validation message
     When signin: I click on forgot_password_link
     When forgot_password: I set my email "abc"
     Then forgot_password: I verify that the email validation message is correct
 
-  @jules
+  @forgot_password
   Scenario Outline: Wrong email validation message
     When signin: I click on forgot_password_link
     When forgot_password: I set my email "<email>"
