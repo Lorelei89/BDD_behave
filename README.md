@@ -17,7 +17,9 @@ Commands in **cmd** file for **Behave** and **Selenium**
 * pip install behave
 * pip install behave-html-formatter
 * pip install webdriver-manager
-* _To run the BDD tests use in **Terminal**_: behave -f html -o behave-report.html  --tags=jules 
+* _To run the BDD tests use in **Terminal**_: 
+     * **behave -f html -o behave-report.html  --tags=forgot_password** for forgot_password BDD tests
+     * **behave -f html -o behave-report.html  --tags=forgot_password** for sign_up BDD tests
 
 ➡️
 _Gherkin syntax keywords:_
@@ -33,8 +35,11 @@ _POM:_
 - OOP: Inheritance principle 
 
 ➡️
-_Report BDD_
-![raport](https://user-images.githubusercontent.com/70057309/172697898-33454b4e-7bcf-4648-9748-fccd7900259b.JPG)
+_Report BDD for **forgot_password.fetaure**_
+![image](https://user-images.githubusercontent.com/70057309/173138540-c464e43b-2065-4877-ac08-707609aa2fa1.png)
+
+_Report BDD for **sign_up.fetaure**_
+![image](https://user-images.githubusercontent.com/70057309/173138638-088fc8e2-6289-4649-943f-17cdc69690f0.png)
 
 ⏩
 _Steps to download the repository:_
@@ -43,6 +48,8 @@ _Steps to download the repository:_
 * Choose either ‘Open with Github Desktop’ if you have installed ‘Github Desktop’ on your computer or ‘Download ZIP’ to download as ZIP document
 * Make sure you use _PyCharm_ with this repository
 * Install the commands from _cmd_ file 
-* Run the test with **behave -f html -o behave-report.html  --tags=jules**
+* Run the test with:
+     * **behave -f html -o behave-report.html  --tags=forgot_password** for forgot_password BDD tests
+     * **behave -f html -o behave-report.html  --tags=forgot_password** for sign_up BDD tests
 
 
