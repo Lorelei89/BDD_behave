@@ -1,4 +1,3 @@
-import time
 
 from selenium.webdriver.common.by import By
 
@@ -27,14 +26,12 @@ class SignupPage(BasePage):
 
     def click_on_personal_btn(self):
         self.driver.find_element(*self.PERSONAL_BTN).click()
-        time.sleep(1)
 
     def click_on_continue_btn(self):
         self.driver.find_element(*self.CONTINUE_BTN).click()
 
     def enter_first_name(self, first_name):
         self.driver.find_element(*self.FIRST_NAME_INPUT).send_keys(first_name)
-        time.sleep(2)
 
     def enter_last_name(self, last_name):
         self.driver.find_element(*self.LAST_NAME_INPUT).send_keys(last_name)
