@@ -31,6 +31,30 @@ def set_impl(context):
     context.sign_in_page.click_on_sign_up_link()
 
 
+@when('signin: I click on send activation email button')
+def set_impl(context):
+    context.sign_in_page.click_on_activ_err2_btn()
+
+
 @then('signin: I verify if word account exists on page')
 def set_impl(context):
     context.sign_in_page.verify_correct_text_in_page()
+
+
+@then('signin: I check the email error message')
+def set_impl(context):
+    context.sign_in_page.check_email_error_msg()
+
+
+# @then('signin: I check the password error message')
+# def set_impl(context):
+#     context.sign_in_page.check_pass_error_msg()
+
+@then('signin: I check the first login error - invalided email')
+def set_impl(context):
+    context.sign_in_page.check_err1_invalided_email()
+
+
+@then('signin: I check the send activation email error message')
+def set_impl(context):
+    context.sign_in_page.check_err1_invalided_email()

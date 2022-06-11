@@ -1,3 +1,5 @@
+import time
+
 from behave import *
 
 
@@ -39,6 +41,7 @@ def set_impl(context, first_name):
 @when('signup: I enter my last name "{last_name}"')
 def set_impl(context, last_name):
     context.sign_up_page.enter_last_name(last_name)
+    time.sleep(4)
 
 
 @when('signup: I enter my email "{email}"')
@@ -59,3 +62,8 @@ def set_impl(context):
 @then('signup: I verify first_name input name to match to ""')
 def set_impl(context):
     context.sign_up_page.verify_correct_first_name()
+
+
+@then('signup: I verify signup word to match title on signup page')
+def set_impl(context):
+    context.sign_up_page.verify_sign_up_title_exists()

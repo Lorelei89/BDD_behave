@@ -30,4 +30,20 @@ Feature: Jules sign_up tests
     When signup: I enter my first name "George"
     Then signup: I verify first_name input name to match to ""
 
+  @signup
+   Scenario Outline: Check email input error
+    When signin: I click on sign_up link
+    When signup: I click on personal button
+    When signup: I click on continue button
+    When signup: I enter my first name "George"
+    When signup: I click on continue button after entering first name
+    When signup: I enter my last name "Petrescu"
+    When signup: I click on continue button after entering last name
+    When signup: I enter my email "<email>"
+    Then signup: I verify the email error message
 
+    Examples:
+      | email          |
+      | email@email.com|
+      | 12345567890    |
+      | ::''':::;;<<<  |

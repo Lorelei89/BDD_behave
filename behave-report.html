@@ -115,11 +115,11 @@ function Collapsible_expandAllFailed()
         </div>
         <div id="summary">
           <p id="totals">
-            <p id="feature_totals">Features: skipped: 1, passed: 1</p>
-            <p id="scenario_totals">Scenarios: skipped: 2, passed: 3</p>
-            <p id="step_totals">Steps: skipped: 3, untested: 8, passed: 8</p>
+            <p id="feature_totals">Features: skipped: 2, passed: 1</p>
+            <p id="scenario_totals">Scenarios: skipped: 10, passed: 1</p>
+            <p id="step_totals">Steps: skipped: 21, untested: 19, passed: 5</p>
           </p>
-          <p id="duration">Finished in 7.9 seconds</p>
+          <p id="duration">Finished in 5.5 seconds</p>
           <div id="expand-collapse">
             <a id="expander" href="#" onclick="Collapsible_expandAll('scenario_steps')">Expand All</a>
             <span> | </span>
@@ -169,6 +169,148 @@ function Collapsible_expandAllFailed()
         <ol class="scenario_steps" id="scenario_2"/>
         <span/>
       </div>
+      <div class="scenario">
+        <span class="scenario_file">features/forgot_password.feature:24</span>
+        <span class="tag">@forgot_password</span>
+        <h3 onclick="Collapsible_toggle('scenario_3')">
+          <span class="val">Scenario: Verification of back to login functionality</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_3"/>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/forgot_password.feature:30</span>
+        <span class="tag">@forgot_password</span>
+        <h3 onclick="Collapsible_toggle('scenario_4')">
+          <span class="val">Scenario: Verification of sign-up functionality on forgot-password page</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_4"/>
+        <span/>
+      </div>
+      <div class="feature">
+        <h2>
+          <span class="val">Feature: Jules sign_in tests</span>
+        </h2>
+        <span/>
+      </div>
+      <div class="background">
+        <h3>
+          <span class="val">Background: </span>
+        </h3>
+        <ol/>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/sign_in.feature:13</span>
+        <span class="tag">@signin1</span>
+        <h3 onclick="Collapsible_toggle('scenario_5')">
+          <span class="val">Scenario Outline: Check email error message -- @1.1 </span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_5"/>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/sign_in.feature:14</span>
+        <span class="tag">@signin1</span>
+        <h3 onclick="Collapsible_toggle('scenario_6')">
+          <span class="val">Scenario Outline: Check email error message -- @1.2 </span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_6"/>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/sign_in.feature:17</span>
+        <span class="tag">@signin1</span>
+        <h3 onclick="Collapsible_toggle('scenario_7')">
+          <span class="val">Scenario: Activation error for invalidated email</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_7"/>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/sign_in.feature:24</span>
+        <span class="tag">@signin</span>
+        <h3 onclick="Collapsible_toggle('scenario_8')">
+          <span class="val">Scenario: Activation error for invalidated email</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_8">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">signin: I am a user on Jules signin page</span>
+              <small class="step_duration">(2.715s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/sign_in_steps.py:4</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>signin: I set my email &quot;</span>
+                <b>mneculau@yahoo.com</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(1.558s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/sign_in_steps.py:9</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>signin: I set my password &quot;</span>
+                <b>aaaa</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(0.185s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/sign_in_steps.py:14</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">signin: I click on login button</span>
+              <small class="step_duration">(0.101s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/sign_in_steps.py:19</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">signin: I click on send activation email button</span>
+              <small class="step_duration">(0.872s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/sign_in_steps.py:34</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">signin: I check the send activation email error message</span>
+              <small class="step_duration">(0.028s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/sign_in_steps.py:58</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
+        <span/>
+      </div>
       <div class="feature">
         <h2>
           <span class="val">Feature: Jules sign_up tests</span>
@@ -183,297 +325,66 @@ function Collapsible_expandAllFailed()
         <span/>
       </div>
       <div class="scenario">
-        <span class="scenario_file">features/sign-up.feature:7</span>
+        <span class="scenario_file">features/sign_up.feature:7</span>
         <span class="tag">@signup</span>
-        <h3 onclick="Collapsible_toggle('scenario_3')">
+        <h3 onclick="Collapsible_toggle('scenario_9')">
           <span class="val">Scenario: Functionality of Log in link</span>
         </h3>
-        <ol class="scenario_steps" id="scenario_3">
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Given </span>
-              <span class="step val">signin: I am a user on Jules signin page</span>
-              <small class="step_duration">(2.702s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_in_steps.py:4</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">signin: I click on sign_up link</span>
-              <small class="step_duration">(0.431s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_in_steps.py:29</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">signup: I click on log in link</span>
-              <small class="step_duration">(0.152s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_up_steps.py:4</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Then </span>
-              <span class="step val">signin: I verify if word account exists on page</span>
-              <small class="step_duration">(0.033s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_in_steps.py:34</span>
-            </div>
-            <span class="embed"/>
-          </li>
-        </ol>
+        <ol class="scenario_steps" id="scenario_9"/>
         <span/>
       </div>
       <div class="scenario">
-        <span class="scenario_file">features/sign-up.feature:22</span>
+        <span class="scenario_file">features/sign_up.feature:22</span>
         <span class="tag">@signup</span>
-        <h3 onclick="Collapsible_toggle('scenario_4')">
+        <h3 onclick="Collapsible_toggle('scenario_10')">
           <span class="val">Scenario Outline: Error message for empty first_name input -- @1.1 </span>
         </h3>
-        <ol class="scenario_steps" id="scenario_4">
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Given </span>
-              <span class="step val">signin: I am a user on Jules signin page</span>
-              <small class="step_duration">(1.208s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_in_steps.py:4</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">signin: I click on sign_up link</span>
-              <small class="step_duration">(0.329s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_in_steps.py:29</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">signup: I click on personal button</span>
-              <small class="step_duration">(0.124s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_up_steps.py:14</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">signup: I click on continue button</span>
-              <small class="step_duration">(0.082s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_up_steps.py:19</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">
-                <span>signup: I enter my first name &quot;</span>
-                <b>mes;;!@$%&amp;*</b>
-                <span>&quot;</span>
-              </span>
-              <small class="step_duration">(0.388s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_up_steps.py:34</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Then </span>
-              <span class="step val">signup: I verify the error for empty input</span>
-              <small class="step_duration">(0.029s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_up_steps.py:54</span>
-            </div>
-            <span class="embed"/>
-          </li>
-        </ol>
+        <ol class="scenario_steps" id="scenario_10"/>
         <span/>
       </div>
       <div class="scenario">
-        <span class="scenario_file">features/sign-up.feature:23</span>
+        <span class="scenario_file">features/sign_up.feature:23</span>
         <span class="tag">@signup</span>
-        <h3 onclick="Collapsible_toggle('scenario_5')">
+        <h3 onclick="Collapsible_toggle('scenario_11')">
           <span class="val">Scenario Outline: Error message for empty first_name input -- @1.2 </span>
         </h3>
-        <ol class="scenario_steps" id="scenario_5">
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Given </span>
-              <span class="step val">signin: I am a user on Jules signin page</span>
-              <small class="step_duration">(0.384s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_in_steps.py:4</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">signin: I click on sign_up link</span>
-              <small class="step_duration">(0.306s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_in_steps.py:29</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">signup: I click on personal button</span>
-              <small class="step_duration">(0.073s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_up_steps.py:14</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">signup: I click on continue button</span>
-              <small class="step_duration">(0.088s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_up_steps.py:19</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">
-                <span>signup: I enter my first name &quot;</span>
-                <b>12345567890</b>
-                <span>&quot;</span>
-              </span>
-              <small class="step_duration">(0.338s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_up_steps.py:34</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Then </span>
-              <span class="step val">signup: I verify the error for empty input</span>
-              <small class="step_duration">(0.031s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_up_steps.py:54</span>
-            </div>
-            <span class="embed"/>
-          </li>
-        </ol>
+        <ol class="scenario_steps" id="scenario_11"/>
         <span/>
       </div>
       <div class="scenario">
-        <span class="scenario_file">features/sign-up.feature:26</span>
+        <span class="scenario_file">features/sign_up.feature:26</span>
         <span class="tag">@signup</span>
-        <h3 onclick="Collapsible_toggle('scenario_6')">
+        <h3 onclick="Collapsible_toggle('scenario_12')">
           <span class="val">Scenario: Check empty first_name input</span>
         </h3>
-        <ol class="scenario_steps" id="scenario_6">
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Given </span>
-              <span class="step val">signin: I am a user on Jules signin page</span>
-              <small class="step_duration">(0.370s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_in_steps.py:4</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">signin: I click on sign_up link</span>
-              <small class="step_duration">(0.323s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_in_steps.py:29</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">signup: I click on personal button</span>
-              <small class="step_duration">(0.083s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_up_steps.py:14</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">signup: I click on continue button</span>
-              <small class="step_duration">(0.112s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_up_steps.py:19</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">
-                <span>signup: I enter my first name &quot;</span>
-                <b>George</b>
-                <span>&quot;</span>
-              </span>
-              <small class="step_duration">(0.288s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_up_steps.py:34</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Then </span>
-              <span class="step val">signup: I verify first_name input name to match to &quot;&quot;</span>
-              <small class="step_duration">(0.028s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/sign_up_steps.py:59</span>
-            </div>
-            <span class="embed"/>
-          </li>
-        </ol>
+        <ol class="scenario_steps" id="scenario_12"/>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/sign_up.feature:47</span>
+        <span class="tag">@signup</span>
+        <h3 onclick="Collapsible_toggle('scenario_13')">
+          <span class="val">Scenario Outline: Check email input error -- @1.1 </span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_13"/>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/sign_up.feature:48</span>
+        <span class="tag">@signup</span>
+        <h3 onclick="Collapsible_toggle('scenario_14')">
+          <span class="val">Scenario Outline: Check email input error -- @1.2 </span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_14"/>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/sign_up.feature:49</span>
+        <span class="tag">@signup</span>
+        <h3 onclick="Collapsible_toggle('scenario_15')">
+          <span class="val">Scenario Outline: Check email input error -- @1.3 </span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_15"/>
         <span/>
       </div>
     </div>
