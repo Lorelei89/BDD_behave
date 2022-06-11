@@ -18,6 +18,7 @@ Commands in **cmd** file for **Behave** and **Selenium**
 * pip install behave-html-formatter
 * pip install webdriver-manager
 * _To run the BDD tests use in **Terminal**_: 
+     * **behave -f html -o behave-report.html  --tags=signin** for sign_in BDD tests
      * **behave -f html -o behave-report.html  --tags=forgot_password** for forgot_password BDD tests
      * **behave -f html -o behave-report.html  --tags=forgot_password** for sign_up BDD tests
 
@@ -49,6 +50,7 @@ _Report BDD for **sign_up.feature**_
 * Make sure you use _PyCharm_ with this repository
 * Install the commands from _cmd_ file 
 * Run the test with:
+     * **behave -f html -o behave-report.html  --tags=signin** for sign_in BDD tests
      * **behave -f html -o behave-report.html  --tags=forgot_password** for forgot_password BDD tests
      * **behave -f html -o behave-report.html  --tags=forgot_password** for sign_up BDD tests
 
