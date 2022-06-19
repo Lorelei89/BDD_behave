@@ -43,8 +43,8 @@ _Report BDD for **sign_up.feature**_
 ![image](https://user-images.githubusercontent.com/70057309/173138638-088fc8e2-6289-4649-943f-17cdc69690f0.png)
 
 ⏩
-**_Steps to download the repository:_
-*** Navigate to the upper level of the project;
+**_Steps to download the repository:_**
+* Navigate to the upper level of the project;
 * Click on the blue ‘Code’ button;
 * Choose either ‘Open with Github Desktop’ if you have installed ‘Github Desktop’ on your computer or ‘Download ZIP’ to download as ZIP document
 * Make sure you use _PyCharm_ with this repository
